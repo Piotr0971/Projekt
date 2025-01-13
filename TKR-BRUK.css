@@ -15,7 +15,7 @@ body {
     align-items: center;
     position: sticky;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #577590;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -27,9 +27,9 @@ body {
 
 .navbar-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    
 
 }
 
@@ -38,9 +38,60 @@ body {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.5s ease;
+    border-right:  solid 2px #486681;
+    padding: 30px;
 }
 
 #navbar a:hover {
-    color: #459fff;
+    color: #1fe250;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #577590;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-colums {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    border-bottom: 2px solid red;
+    margin-bottom: 10px;
+}
+
+.footer-section a, .footer-section p {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: #007BFF;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.footer-socials img {
+    width: 24px;
+    height: 24px;
+}
