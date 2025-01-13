@@ -14,7 +14,7 @@ body {
     justify-content: left;
     align-items: center;
     position: sticky;
-    max-width: 576px;
+    
     width: 100%;
     padding: 5px 10px;
     background-color: #577590;
@@ -120,7 +120,7 @@ body {
     align-items: center;
     position: sticky;
     width: 100%;
-    max-width: 1200px;
+    
     padding: 10px 20px;
     background-color: #577590;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
