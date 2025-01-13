@@ -14,6 +14,7 @@ body {
     justify-content: left;
     align-items: center;
     position: sticky;
+    width: 100%;
     padding: 10px 20px;
     background-color: #577590;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
