@@ -103,12 +103,24 @@ body {
 
 @media (min-width: 576px) {
 
+html {
+    scroll-behavior: smooth;
+}
+    
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #CFE8EF;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+ }    
+
 #navbar {
     display: flex;
     justify-content: left;
     align-items: center;
     position: sticky;
     width: 100%;
+    max-width: 1200px;
     padding: 10px 20px;
     background-color: #577590;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
