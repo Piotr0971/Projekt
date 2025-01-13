@@ -5,18 +5,25 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #CFE8EF;
+    /*background-color: #CFE8EF;*/
+    background-image: url('tło.jpg'); 
+    background-size: cover; 
+    background-position: center;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #navbar {
     display: flex;
     justify-content: left;
     align-items: center;
-    position: sticky;
     /*width: 100%;*/
     padding: 5px 10px;
-    /*background-color: #577590;*/
     background-color: black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -35,18 +42,20 @@ body {
 
 }
 
-#navbar a {
+#navbar .button {
     color: #fff;
     text-decoration: none;
     font-size: 8px;
     transition: color 0.5s ease;
-    border-right:  solid 2px #486681;
+    border-right:  solid 2px red;
     padding: 10px;
 }
 
 #navbar a:hover {
     color: #1fe250;
 }
+
+
 
 .footer {
     display: flex;
@@ -111,15 +120,22 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #CFE8EF;
+    background-image: url('tło.jpg'); 
+    background-size: cover; 
+    background-position: center;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
  }    
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
 
 #navbar {
     display: flex;
     justify-content: left;
     align-items: center;
-    position: sticky;
     /*width: 100%;*/
     padding: 10px 20px;
     background-color: black;
@@ -140,17 +156,56 @@ body {
 
 }
 
-#navbar a {
+#navbar .button {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.5s ease;
-    border-right:  solid 2px #486681;
+    border-right:  solid 2px red;
     padding: 30px;
 }
 
 #navbar a:hover {
     color: #1fe250;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #fff;
+    width: 30%;
+    margin-left: 100px;
+    border: solid 5px burlywood;
+    background-color: rgba(87, 51, 5, 0.555);
+    padding: 40px;
+}
+
+.cennik {
+    padding: 10px 10px;
+    display: flex;
+    width: 75%;
+
+}
+
+.cennik tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+
+
+.cennik td {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: solid 5px burlywood;
+    background-color: rgba(87, 51, 5, 0.555);
+    border-radius: 5px;
+    padding: 25px;
+    
 }
 
 .footer {
