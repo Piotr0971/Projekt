@@ -14,8 +14,8 @@ body {
     justify-content: left;
     align-items: center;
     position: sticky;
-    width: 100%;
-    padding: 10px 20px;
+    
+    padding: 5px 10px;
     background-color: #577590;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -23,7 +23,7 @@ body {
 
 .navbar-brand .logo {
     height: 50px;
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 .navbar-links {
@@ -62,7 +62,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     margin-bottom: 20px;
 }
 
@@ -74,12 +74,15 @@ body {
 .footer-title {
     border-bottom: 2px solid red;
     margin-bottom: 10px;
+    font-size: 15px;
+    padding: 15px;
 }
 
 .footer-section a, .footer-section p {
     color: #fff;
     text-decoration: none;
     margin-bottom: 5px;
+    font-size: 10px;
 }
 
 .footer-section a:hover {
