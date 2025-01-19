@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     /*background-color: #CFE8EF;*/
-    background-image: url('tło.jpg'); 
+    background-image: url('tło.jpg');
     background-size: cover; 
     background-position: center;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -167,6 +167,11 @@ header {
 
 #navbar a:hover {
     color: #1fe250;
+}
+
+.home-video {
+    /*width: 100%;*/
+    height: 10%;
 }
 
 h1 {
