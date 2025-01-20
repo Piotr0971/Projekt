@@ -38,6 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     
 
 }
@@ -47,7 +48,7 @@ header {
     text-decoration: none;
     font-size: 8px;
     transition: color 0.5s ease;
-    border-right:  solid 2px red;
+    background-color: dimgray;
     padding: 10px;
 }
 
@@ -130,6 +131,7 @@ header {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 #navbar {
@@ -142,6 +144,45 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.rozwijane-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    position: absolute;
+    margin-top: 40px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+    max-height: 0; 
+    opacity: 0; 
+    visibility: hidden; 
+    transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.mini-button {
+    margin-top: 2px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    transition: color 0.5s ease;
+    background-color: dimgray;
+    padding: 15px;
+    border: outset;
+    border-radius: 5px;
+}
+
+.menu-content a {
+    display: block;
+}
+
+.rozwijane-menu:hover .menu-content {
+    max-height: 200px;
+    opacity: 1;
+    visibility: visible;
+}
 
 .navbar-brand .logo {
     height: 100px;
@@ -152,6 +193,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     
 
 }
@@ -161,11 +203,13 @@ header {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.5s ease;
-    border-right:  solid 2px red;
+    background-color: dimgray;
     padding: 30px;
+    border: outset;
+    border-radius: 5px;
 }
 
-#navbar a:hover {
+#navbar a:hover, .mini-button a:hover {
     color: #1fe250;
 }
 
@@ -179,16 +223,20 @@ header {
 
 .home {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 10% 0 10%;
-    width: 80%;
+    max-width: 80%;
     background-color: dimgray;
     border-left: solid 5px black;
     border-right: solid 5px black;
 }
 
 .nagłówek {
+    display: flex;
     margin: 0 10% 0 10%;
-    width: 80%;
+    padding: 20px 0 0 30px;
+    max-width: 80%;
     background-color: dimgray;
     border-left: solid 5px black;
     border-right: solid 5px black;
@@ -196,25 +244,41 @@ header {
 }
 
 .tytuł-home {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .opis {
-    margin-top: 200px;
+    margin: 50px 0px 0px 50px;
     width: 50%;
 }
 
 .mini-galeria {
-    width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    padding: 50px;
+    
 }
 
 .obraz {
-    width: 300px;
+    width: 400px;
     height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.opis-obrazka {
+    text-align: center;
+    width: 400px;
+    margin-top: 0;
+    padding: 4px 0;
+    background-color: lightgray;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .tytuł-cennik {

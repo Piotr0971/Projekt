@@ -7,7 +7,9 @@
     <meta name="author" content="Piotr Dawidowicz">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="TKR-BRUK.css">
     <title>TKR-BRUK</title>
 </head>
@@ -20,15 +22,21 @@
             <div class="navbar-links">
                 <a href="#O nas" class="button">O nas</a>
                 <a href="Cennik.html" class="button">Cennik</a>
-                <a href="#Wyposażenie" class="button">Wyposażenie</a>
-                <a href="#Galeria" class="button">Galeria</a>
+                <div class="rozwijane-menu">
+                <a href="#Galeria" class="button" id="rozwin">Galeria</a>
+                    <div class="menu-content">
+                        <a href="#" class="mini-button">Czerwiec 2025</a>
+                        <a href="#" class="mini-button">Lipiec 2025</a>
+                        <a href="#" class="mini-button">Sierpień 2025</a>
+                    </div>
+                </div>
                 <a href="#Kontakt" class="button">Kontakt</a>    
             </div>    
         </nav>
     </header>
     <main>
         <section class="home-video">
-            <video autoplay muted>
+            <video autoplay muted loop>
                 <source src="home-video.mp4" type="	video/mp4">
             </video>
         </section>
@@ -41,6 +49,7 @@
             </div>
             <div class="mini-galeria">
                 <img src="budowlaniec.jpg" alt="obraz" class="obraz">
+                <p class="opis-obrazka">Domek z architektem</p>
             </div>
         </section>
 
@@ -70,13 +79,16 @@
             </div>
             <div class="footer-socials">
                 <a href="#">
-                    <img src="https://cdn.pixabay.com/photo/2016/08/01/21/00/icon-1562136_640.png" alt="">
+                    <img src="instagram.png" alt="">
                 </a>
                 <a href="#">
-                    <img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_640.png" alt="">
+                    <img src="facebook.png" alt="">
                 </a>
                 <a href="#">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/19/03/08/youtube-1837872_640.png" alt="">
+                    <img src="youtube.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="whatsapp.png" alt="">
                 </a>
     </footer>
 
