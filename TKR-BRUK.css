@@ -5,7 +5,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /*background-color: #CFE8EF;*/
     background-image: url('tło.jpg');
     background-size: cover; 
     background-position: center;
@@ -22,7 +21,6 @@ header {
     display: flex;
     justify-content: left;
     align-items: center;
-    /*width: 100%;*/
     padding: 5px 10px;
     background-color: black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -63,7 +61,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /*width: 100%;*/
     padding: 10px;
     background-color: black;
     color: white;
@@ -79,12 +76,10 @@ header {
 }
 
 .footer-section {
-    display: flex;
-    flex-direction: column;
+    width: 25%;
 }
 
 .footer-title {
-    /*border-bottom: 2px solid red;*/
     margin-bottom: 10px;
     font-size: 15px;
     padding: 15px;
@@ -97,9 +92,7 @@ header {
     font-size: 10px;
 }
 
-.footer-section a:hover {
-    color: #007BFF;
-}
+
 
 .footer-socials {
     display: flex;
@@ -220,7 +213,7 @@ header {
     overflow: hidden;
 }
 
-.home {
+.home, .galeria {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,7 +228,7 @@ header {
 .nagłówek {
     display: flex;
     margin: 2% 10% 0 10%;
-    padding: 20px 0 0 30px;
+    padding: 30px 30px 0 30px;
     max-width: 80%;
     background-color: dimgray;
     border-top: solid 5px black;
@@ -246,6 +239,7 @@ header {
 
 .tytuł-home {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #fff;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -287,17 +281,26 @@ header {
     justify-content: flex-start;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: #fff;
-    width: 30%;
     margin-left: 100px;
-    border: solid 5px burlywood;
-    background-color: rgba(87, 51, 5, 0.555);
-    padding: 40px;
+    margin: 2% 10% 0 10%;
+    padding: 30px 0 30px 30px;
+    max-width: 80%;
+    background-color: dimgray;
+    border-top: solid 5px black;
+    border-left: solid 5px black;
+    border-right: solid 5px black;
+    
 }
 
 .cennik {
-    padding: 10px 10px;
+    padding: 10px 0 10px 30px;
     display: flex;
-    width: 75%;
+    margin: 0 10% 2% 10%;
+    max-width: 80%;
+    background-color: dimgray;
+    border-left: solid 5px black;
+    border-right: solid 5px black;
+    border-bottom: solid 5px black;
 
 }
 
@@ -321,6 +324,45 @@ header {
     
 }
 
+.tytuł-galeria {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-top: 0;
+}
+
+.galeria-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.kontener-obraz {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.obraz-galeri {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.opis-obrazka-g {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    padding: 4px 0;
+    background-color: lightgray;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -342,8 +384,7 @@ header {
 }
 
 .footer-section {
-    display: flex;
-    flex-direction: column;
+    width: 25%;
 }
 
 .footer-title {
@@ -360,11 +401,8 @@ header {
     color: #fff;
     text-decoration: none;
     margin-bottom: 5px;
+    margin-right: 5px;
     font-size: 16px;
-}
-
-.footer-section a:hover {
-    color: #007BFF;
 }
 
 .footer-socials {

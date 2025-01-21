@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="author" content="Piotr Dawidowicz">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="TKR-BRUK.css">
     <title>TKR-BRUK</title>
 </head>
@@ -16,14 +21,21 @@
             </div>
             <div class="navbar-links">
                 <a href="#O nas" class="button">O nas</a>
-                <a href="#Cennik" class="button">Cennik</a>
-                <a href="#Galeria" class="button">Galeria</a>
+                <a href="Cennik.html" class="button">Cennik</a>
+                <div class="rozwijane-menu">
+                <a href="Galeria.html" class="button" id="rozwin">Galeria</a>
+                    <div class="menu-content">
+                        <a href="#" class="mini-button">Czerwiec 2025</a>
+                        <a href="#" class="mini-button">Lipiec 2025</a>
+                        <a href="#" class="mini-button">Sierpień 2025</a>
+                    </div>
+                </div>
                 <a href="#Kontakt" class="button">Kontakt</a>    
             </div>    
         </nav>
     </header>
     <main>
-        <h1 class="tytuł-cennik">Cennik usług</h1>
+        <h1 class="tytuł-cennik">Cennik prowadzonych przez nas usług</h1>
         <div class="cennik">
             <table>
                 <tr>
@@ -135,40 +147,39 @@
 
 
     </main>
-    <footer>
-        <footer class="footer">
-            <div class="footer-colums">
-                <div class="footer-section">
-                    <h4 class="footer-title">Firma</h4>
-                    <a href="#">Strona główna</a>
-                    <a href="#">O Nas</a>
-                    <a href="#">FAQ</a>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Kontakt</h4>
-                    <p>Tel: +48 000-000-000</p>
-                    <p>E-mail: TKR-BRUK.kontakt@gmail.com</p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Adres</h4>
-                    <p>Ulica 123</p>
-                    <p>00-000 Miasto</p>
-                    <p>Poland</p>
-                </div>
+    <footer class="footer">
+        <div class="footer-colums">
+            <div class="footer-section">
+                <h4 class="footer-title">Firma</h4>
+                <a href="index.html">Strona główna</a>
+                <a href="#">O Nas</a>
+                <a href="#">FAQ</a>
             </div>
-            <div class="footer-socials">
-                <a href="#">
-                    <img src="https://cdn.pixabay.com/photo/2016/08/01/21/00/icon-1562136_640.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_640.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/19/03/08/youtube-1837872_640.png" alt="">
-                </a>
-    </footer>
-
+            <div class="footer-section">
+                <h4 class="footer-title">Kontakt</h4>
+                <p>Tel: +48 000-000-000</p>
+                <p>E-mail: TKR-BRUK.kontakt@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Adres</h4>
+                <p>Gen. Walerego Wróblewskiego</p>
+                <p>93-578 Łódź</p>
+            </div>
+        </div>
+        <div class="footer-socials">
+            <a href="#">
+                <img src="instagram.png" alt="">
+            </a>
+            <a href="#">
+                <img src="facebook.png" alt="">
+            </a>
+            <a href="#">
+                <img src="youtube.png" alt="">
+            </a>
+            <a href="#">
+                <img src="whatsapp.png" alt="">
+            </a>
+        </div>
+</footer>
 </body>
 </html>
