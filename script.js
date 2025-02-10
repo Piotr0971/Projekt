@@ -38,19 +38,9 @@ const translations = {
 };
 
 function translateTo(lang) {
-
-    localStorage.setItem("selectedLanguage", lang);
-
     document.querySelectorAll("#text").forEach(el => {
         if (translations[lang][el.innerText]) {
             el.innerText = translations[lang][el.innerText];
         }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            const savedLang = localStorage.getItem("selectedLanguage");
-            if (savedLang) {
-                translateTo(savedLang);
-            }
-        })
     });
 }
