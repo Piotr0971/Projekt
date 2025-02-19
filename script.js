@@ -54,7 +54,18 @@ const translations = {
         "Terrace cube with black border": "Taras kostka w czarnym obramowaniem",
         "Path paved with gray pavers": "Ścieżka wybrukowana szarą kostką",
         "Too small of a photo, the quality is messed up": "Za małe zdjęcie, jakość się posypała",
-        "Terrace made of nice thicker pavers": "Taras z ładnej grubszej kostki"
+        "Terrace made of nice thicker pavers": "Taras z ładnej grubszej kostki",
+        //Kontakt
+        "Get in touch with us!": "Skontaktuj się z nami!",
+        "We are here to answer your questions. If you want us to meet your expectations or you have a finished project.": "Jesteśmy tutaj, by odpowiedzieć na twoje pytania. Jeżeli chcesz byśmy sprostali twoim oczekiwaniom albo masz gotowy projekt.",
+        "Fill out the contact form and we will get back to you and help you with everything.": "Wypełnij fromularz kontaktowy, a my odezwiemy się do ciebie i pomożemy ze wszystkim.",
+        "We will prepare a quote, equipment and all necessary materials.": "Przygotujemy wycenę, sprzęt i wszystkie potrzebne materiały.",
+        "Contact Form": "Formularz Kontaktowy",
+        "Where did you find us?": "Gdzie nas znalazłeś?",
+        "Recommendation from friends": "Polecenie od znajomych",
+        "Others": "Inne",
+        "Message": "Wiadomość",
+        "Send": "Wyślij"
     },
     //Angielski
     "en": {
@@ -107,8 +118,28 @@ const translations = {
         "Taras kostka w czarnym obramowaniem": "Terrace cube with black border",
         "Ścieżka wybrukowana szarą kostką": "Path paved with gray pavers",
         "Za małe zdjęcie, jakość się posypała": "Too small of a photo, the quality is messed up",
-        "Taras z ładnej grubszej kostki": "Terrace made of nice thicker pavers"
+        "Taras z ładnej grubszej kostki": "Terrace made of nice thicker pavers",
+        //Contact
+        "Skontaktuj się z nami!": "Get in touch with us!",
+        "Jesteśmy tutaj, by odpowiedzieć na twoje pytania. Jeżeli chcesz byśmy sprostali twoim oczekiwaniom albo masz gotowy projekt.": "We are here to answer your questions. If you want us to meet your expectations or you have a finished project.",
+        "Wypełnij fromularz kontaktowy, a my odezwiemy się do ciebie i pomożemy ze wszystkim.": "Fill out the contact form and we will get back to you and help you with everything.",
+        "Przygotujemy wycenę, sprzęt i wszystkie potrzebne materiały.": "We will prepare a quote, equipment and all necessary materials.",
+        "Formularz Kontaktowy": "Contact Form",
+        "Gdzie nas znalazłeś?": "Where did you find us?",
+        "Polecenie od znajomych": "Recommendation from friends",
+        "Inne": "Others",
+        "Wyślij": "Send"
     }
+};
+
+const trans = {
+    en: ["First Name", "Last name"],
+    pl: ["Imię", "Nazwisko"]
+};
+
+const trans2 = {
+    en: ["Message"],
+    pl: ["Wiadomość"]
 };
 
 function translateTo(lang) {
@@ -120,6 +151,17 @@ function translateTo(lang) {
             el.innerText = translations[lang][el.innerText];
         }
     });
+
+    let inputs = document.querySelectorAll(".translate");
+    inputs.forEach((input, index) => {
+        input.placeholder = trans[lang][index] || input.placeholder;
+    });
+
+    let textareas = document.querySelectorAll(".translate2");
+    textareas.forEach((textarea, index) => {
+        textarea.placeholder = trans2[lang][index] || input.placeholder;
+    });
+
 };
 
 document.addEventListener("DOMContentLoaded", function() {

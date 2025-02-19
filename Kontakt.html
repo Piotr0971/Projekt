@@ -30,7 +30,7 @@
                         <a href="#" class="mini-button" id="text">Sierpień 2025</a>
                     </div>
                 </div>
-                <a href="Kontakt.html" class="button" id="text">Kontakt</a>    
+                <a href="Kontakt.html" class="button" id="text">Kontakt</a>   
             </div>
             <div class="lang">
                 <img src="polska.png" alt="flaga polski" onclick="translateTo('pl')" class="polski">
@@ -38,32 +38,50 @@
             </div>    
         </nav>
     </header>
-    <main>
-        <div class="nagłówek">
-            <h1 class="tytuł-galeria" id="text">Galeria Rok 2025</h1>
-        </div>
-        <section class="galeria">
-            <div class="galeria-content">
-                <div class="kontener-obraz">
-                    <img src="taras1.jpg" alt="" class="obraz-galeri">
-                    <p class="opis-obrazka-g" id="text">Taras kostka w czarnym obramowaniem</p>
+<main>
+    <section class="kontakt-style">
+            <div class="socials">
+                <h1 class="tytuł-kontakt" id="text">Skontaktuj się z nami!</h1>
+                <div class="border-kontakt">
+                <p class="kontakt-opis" id="text">Jesteśmy tutaj, by odpowiedzieć na twoje pytania. Jeżeli chcesz byśmy sprostali twoim oczekiwaniom albo masz gotowy projekt.</p>
+                <p class="kontakt-opis" id="text">Wypełnij fromularz kontaktowy, a my odezwiemy się do ciebie i pomożemy ze wszystkim.</p>
+                <p class="kontakt-opis" id="text">Przygotujemy wycenę, sprzęt i wszystkie potrzebne materiały.</p>
                 </div>
-                <div class="kontener-obraz">
-                    <img src="taras2.jpg" alt="" class="obraz-galeri">
-                    <p class="opis-obrazka-g" id="text">Ścieżka wybrukowana szarą kostką</p>
-                </div>
-                <div class="kontener-obraz">
-                    <img src="taras3.jpg" alt="" class="obraz-galeri">
-                    <p class="opis-obrazka-g" id="text">Za małe zdjęcie, jakość się posypała</p>
-                </div>
-                <div class="kontener-obraz">
-                    <img src="taras4.jpg" alt="" class="obraz-galeri">
-                    <p class="opis-obrazka-g" id="text">Taras z ładnej grubszej kostki</p>
+                <div class="kontakt-socials">
+                    <a href="#">
+                        <img src="instagram.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="facebook.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="youtube.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="whatsapp.png" alt="">
+                    </a>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
+            <div class="formularz">
+                <h2 class="Nagłówek-formularza" id="text">Formularz Kontaktowy</h2>
+                <form action="https://formsubmit.co/your@email.com" method="POST">
+                    <input type="text" class="translate" placeholder="Imię" name="Imię" required>
+                    <input type="text" class="translate" placeholder="Nazwisko" name="Nazwisko" required>
+                    <input type="email" placeholder="E-mail" name="E-mail" required>
+                    <textarea class="translate2" name="Wiadomość" placeholder="Wiadomość" maxlength="1000" wrap="soft"></textarea>
+                    <select name="Gdzie nas znalazłeś" required>
+                        <option id="text" value="Gdzie nas znalazłeś?" disabled hidden selected>Gdzie nas znalazłeś?</option>
+                        <option value="Google">Google</option>
+                        <option value="Facebook/Youtube/Instagram">Facebook/Youtube/Instagram</option>
+                        <option id="text" value="Polecenie od znajomych">Polecenie od znajomych</option>
+                        <option id="text" value="Inne">Inne</option>
+                    </select>
+                    <button type="submit" class="send-button" id="text">Wyślij</button>
+                </form>
+            </div>
+    </section>
+</main>
+<footer class="footer">
         <div class="footer-colums">
             <div class="footer-section">
                 <h4 class="footer-title" id="text">Firma</h4>

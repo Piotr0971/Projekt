@@ -391,6 +391,100 @@ table {
     border-bottom-left-radius: 5px;
 }
 
+.kontakt-style {
+    display: flex;
+    margin: 2% 10% 2% 10%;
+    max-width: 80%;
+    background-color: dimgray;
+    border: solid 5px black;
+    padding: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    padding: 20px;
+}
+
+.tytuł-kontakt {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.border-kontakt {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 15px 50px 30px;
+}
+
+.kontakt-opis {
+    margin: 0;
+    
+}
+
+.kontakt-socials {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kontakt-socials img {
+    width: 40px;
+    height: 40px;
+}
+
+.formularz {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+input, select, textarea {
+    width: 80%;
+    background-color: lightgrey;
+    resize: none;
+    border: solid 1px black;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+input, select {
+    height: 40px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.send-button {
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-right: 10%;
+
+}
+
 .footer {
     display: flex;
     flex-direction: column;
