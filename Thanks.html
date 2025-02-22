@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Piotr Dawidowicz">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="TKR-BRUK.css">
+    <title>TKR-BRUK</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="navbar-brand">
+                <a href="index.html"><img src="TKR.png" href="#Logo" alt="Logo firmy TKR-BRUK" class="logo"></a>
+            </div>
+            <div class="navbar-links">
+                <a href="index.html" class="button" id="text">O Nas</a>
+                <a href="Cennik.html" class="button" id="text">Cennik</a>
+                <div class="rozwijane-menu">
+                <a href="Galeria.html" class="button" id="text">Galeria</a>
+                    <div class="menu-content">
+                        <a href="#" class="mini-button" id="text">Czerwiec 2025</a>
+                        <a href="#" class="mini-button" id="text">Lipiec 2025</a>
+                        <a href="#" class="mini-button" id="text">Sierpień 2025</a>
+                    </div>
+                </div>
+                <a href="Kontakt.html" class="button" id="text">Kontakt</a>   
+            </div>
+            <div class="lang">
+                <img src="polska.png" alt="flaga polski" onclick="translateTo('pl')" class="polski">
+                <img src="anglia.png" alt="flaga anglii" onclick="translateTo('en')" class="angielski">
+            </div>    
+        </nav>
+    </header>
+<main>
+    <section class="thanks-background">
+        <div class="thanks">
+            <h1 id="text">Dziękujemy za wypełnienie formularza kontaktowego.</h1>
+            <p id="text">Wiadomośc została wysłana na naszego maila, w najbliższym czasie odezwiemy się z odpowiedzią.</p>
+        </div>
+    </section>
+</main>
+<script src="script.js" defer></script>
+</body>
+</html>

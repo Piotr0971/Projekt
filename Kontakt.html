@@ -64,7 +64,7 @@
             </div>
             <div class="formularz">
                 <h2 class="Nagłówek-formularza" id="text">Formularz Kontaktowy</h2>
-                <form action="https://formsubmit.co/your@email.com" method="POST">
+                <form action="https://formsubmit.co/your@email.com" id="demo-form" method="POST">
                     <input type="text" class="translate" placeholder="Imię" name="Imię" required>
                     <input type="text" class="translate" placeholder="Nazwisko" name="Nazwisko" required>
                     <input type="email" placeholder="E-mail" name="E-mail" required>
@@ -76,6 +76,8 @@
                         <option id="text" value="Polecenie od znajomych">Polecenie od znajomych</option>
                         <option id="text" value="Inne">Inne</option>
                     </select>
+                    <input type="hidden" name="_subject" value="Nowy Email!">
+                    <input type="hidden" name="_next" value="https://yourdomain.co/Thanks.html">
                     <button type="submit" class="send-button" id="text">Wyślij</button>
                 </form>
             </div>

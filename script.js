@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("Strona załadowana!");
 });
 
+
 const translations = {
     //Polski
     "pl": {
@@ -65,7 +66,9 @@ const translations = {
         "Recommendation from friends": "Polecenie od znajomych",
         "Others": "Inne",
         "Message": "Wiadomość",
-        "Send": "Wyślij"
+        "Send": "Wyślij",
+        "Thank you for filling out the contact form.": "Dziękujemy za wypełnienie formularza kontaktowego.",
+        "The message was sent to our email, we will get back to you with a reply in the near future.": "Wiadomośc została wysłana na naszego maila, w najbliższym czasie odezwiemy się z odpowiedzią."
     },
     //Angielski
     "en": {
@@ -128,7 +131,9 @@ const translations = {
         "Gdzie nas znalazłeś?": "Where did you find us?",
         "Polecenie od znajomych": "Recommendation from friends",
         "Inne": "Others",
-        "Wyślij": "Send"
+        "Wyślij": "Send",
+        "Dziękujemy za wypełnienie formularza kontaktowego.": "Thank you for filling out the contact form.",
+        "Wiadomośc została wysłana na naszego maila, w najbliższym czasie odezwiemy się z odpowiedzią.": "The message was sent to our email, we will get back to you with a reply in the near future."
     }
 };
 
@@ -168,3 +173,4 @@ document.addEventListener("DOMContentLoaded", function() {
     const savedLang = sessionStorage.getItem("selectedLanguage")
     translateTo(savedLang);
 });
+

@@ -109,6 +109,7 @@ header {
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
     
 body {
@@ -118,7 +119,7 @@ body {
     background-size: cover; 
     background-position: center;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
- }    
+ }
 
 header {
     position: sticky;
@@ -391,7 +392,7 @@ table {
     border-bottom-left-radius: 5px;
 }
 
-.kontakt-style {
+.kontakt-style, .thanks-background {
     display: flex;
     margin: 2% 10% 2% 10%;
     max-width: 80%;
@@ -470,6 +471,17 @@ input, select {
 
 textarea {
     height: 80px;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 15px 50px 30px;
 }
 
 .send-button {
